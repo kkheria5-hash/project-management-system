@@ -10,6 +10,7 @@ const Projects = () => {
         "A smart dashboard for managing projects and team productivity.",
       progress: 65,
       status: "In Progress",
+      priority: "High",
     },
     {
       id: 2,
@@ -18,6 +19,7 @@ const Projects = () => {
         "Machine learning system for predicting patient health risks.",
       progress: 80,
       status: "In Progress",
+      priority: "Medium",
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ const Projects = () => {
         "Analytics platform for tracking sales and customer behavior.",
       progress: 45,
       status: "Planning",
+      priority: "Low",
     },
     {
       id: 4,
@@ -34,6 +37,7 @@ const Projects = () => {
         "Intelligent chatbot for automated customer support.",
       progress: 100,
       status: "Completed",
+      priority: "Medium",
     },
   ];
 
@@ -51,6 +55,7 @@ const Projects = () => {
             description={project.description}
             progress={project.progress}
             status={project.status}
+            priority={project.priority}
           />
         ))}
       </div>
